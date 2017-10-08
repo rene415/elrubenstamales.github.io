@@ -41,6 +41,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Sobre Nosotros</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Menu</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -53,7 +56,7 @@
             <img class="img-fluid" src="img/cartoonimgtemp.png">
           </h1>
           <hr>
-          <p>Lo mejor del sabor Mexicano en el área de la Bahía El RubenS Tamales nos ponemos a sus órdenes</p>
+          <p class="text-white">Lo mejor del sabor Mexicano en el área de la Bahía El RubenS Tamales nos ponemos a sus órdenes</p>
           <!--a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Contáctanos</a-->
         </div>
       </div>
@@ -64,63 +67,71 @@
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">El RubenS Tamales</h2>
+            <script language="javascript">
+              var imgs = ["img/nenaypaparubencarrito.png", "img/Ruben_Y_elena.jpg", "img/nenaypaparuben.png"];
+
+              function changeImage() {
+                document.getElementById("imgClickAndChange").src = imgs[0];
+                imgs.push(imgs.shift())
+              }
+            </script>
+            <div class="container">
+              <div id="slideshow">
+                <img class="img-thumbnail" src="img/nenaypaparuben.png" id="imgClickAndChange" onclick="changeImage()" />
+              </div>
+            </div>
+            <!--div class="container">
+              <img class="img-thumbnail" src="img/nenaypaparuben.jpg">
+            </div-->
             <hr class="light">
-            <p class="text-faded">Description here</p>
+            <p class="text-faded">Con mas de 10 años de experiencia</p>
             <!--a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a-->
           </div>
         </div>
       </div>
     </section>
-<!--
+
     <section class="p-0" id="portfolio">
+      <h2 class="bg-primary text-center text-white">Menu</h2>
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="img/Tamalederaja.png">
+              <img class="img-fluid" src="img/Tamalederaja.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
                   <div class="project-name">
-                    Project Name
+                    Tamales de Pollo en Salsa Verde
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/Tamalederaja.png">
+              <img class="img-fluid" src="img/Tamalederaja.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
                   <div class="project-name">
-                    Project Name
+                    Tamales de Puerco en Salsa Roja
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="img/Tamalederaja.png">
+              <img class="img-fluid" src="img/Tamalederaja.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
                   <div class="project-name">
-                    Project Name
+                    Tamales de Rajas con Queso
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <!--div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -164,11 +175,11 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div-->
         </div>
       </div>
     </section>
--->
+
 <!--
     <div class="call-to-action bg-dark">
       <div class="container text-center">
